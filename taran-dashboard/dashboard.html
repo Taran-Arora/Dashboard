@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="fixed-width-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.8027faa939a03fe72971.png" alt="" class="img-fluid">
+                </a> -->
+
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/profile.jpg" class="avatar img-fluid rounded" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown3">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-list pe-2"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-people-group pe-2"></i>
+                                Team
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <li><a class="dropdown-item" href="#">Page 1</a></li>
+                                <li><a class="dropdown-item" href="#">Page 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-dollar-sign pe-2"></i>
+                                Profits
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item" href="#">Post 1</a></li>
+                                <li><a class="dropdown-item" href="#">Post 2</a></li>
+                                <li><a class="dropdown-item" href="#">Post 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-bullhorn pe-2"></i>
+                                Promo & PDFs
+                            </a>
+                        </li>
+                        <li class="nav-item log-out-btn">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Log Out 
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/images/profile.jpg" class="avatar img-fluid rounded" alt="">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown3">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Setting</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </nav>
+
+        <main class="content px-3 py-2">
+            <div class="container-fluid">
+                <div class="row divider">
+                    <div class="col-xl-6 col-md-12 d-flex align-items-center">
+                        <div class="flex-fill border-0">
+                            <div class="p-0 d-flex flex-fill">
+                                <div class="row g-0 w-100">
+                                    <div class="col-12">
+                                        <div class="p-3 m-1 user-info-section">
+                                            <div class="profile-icon">
+                                                <img src="./assets/images/UserPfp.png" alt="">
+                                            </div>
+                                            <div class="profile-details">
+                                                <div class="user_name">
+                                                    <h2>
+                                                        <span>ID RichCrowd</span>
+                                                    </h2>
+                                                </div>
+                                                <div class="user_id">
+                                                    <h5 id="user-id">0x222....Bf314 <span
+                                                            onclick="copyToClipboard()"><i
+                                                                class="fa-regular fa-copy"></i></span></h5>
+                                                </div>
+                                                <div class="user-invited">
+                                                    <h6>Invited 13-05-2024 by</h6>
+                                                </div>
+                                                <div class="user-invited">
+                                                    <h6>
+                                                        <span class="id-btn">ID 37437539</span>
+                                                        
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12 d-flex flex-remove">
+                        <div class="flex-fill border-0">
+                            <div class="py-4">
+                                <div class="d-flex cards-top">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="mb-2 heading">
+                                                Personal link
+                                            </h5>
+                                            <div class="link-web">
+                                                <h5 id="link-web">https://preview.themeforest.net/item/musicine-music-school-elementor-template-kit/full_screen_preview/40234423 
+                                                    <span onclick="copyToClipboard2()"><i
+                                                            class="fa-regular fa-copy ms-3"></i></span>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card token-card">
+                                        <div class="card-body">
+                                            <div class="token-name">
+                                                <h5 class="mb-2 heading">
+                                                    KSN/USDT
+                                                </h5>
+                                                <button>
+                                                    <span>0.0192 USDT</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-now">
+                    <div class="row main-row-p">
+                        <div class="col-xl-4 col-sm-6">
+                            <div class="box1">
+                                <h6>Profits</h6>
+                                <h2>51624.600 USDT</h2>
+                                <div class="bar">
+                                    <p>7.000 USDT</p>
+                                    <img src="./assets/images/activity_white.472e484d1c4818b42d0e.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6">
+                            <div class="box1">
+                                <h6>Partners</h6>
+                                <h2>7</h2>
+                                <div class="bar">
+                                    <p>0</p>
+                                    <img src="./assets/images/activity_white.472e484d1c4818b42d0e.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6">
+                            <div class="box1">
+                                <h6>Team business</h6>
+                                <h2>245485.000 USDT</h2>
+                                <div class="bar">
+                                    <img src="./assets/images/activity_white.472e484d1c4818b42d0e.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6">
+                            <div class="box1">
+                                <h6>X2 Total Team</h6>
+                                <h2>3337</h2>
+                                <div class="bar">
+                                    <img src="./assets/images/activity_white.472e484d1c4818b42d0e.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program overflow-hidden">
+                    <div class="program-head">
+                        <h3>The Rich Crowd Programs</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="custom-card">
+                                <h3> Direct  Income </h3>
+                                <p>3289.50 USDT</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="custom-card">
+                                <h3>Binary Income</h3>
+                                <p>3289.50 USDT</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="custom-card">
+                                <h3> Matching Binary Income </h3>
+                                <p>3289.50 USDT</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="custom-card">
+                                <h3> Binary Single Leg Income</h3>
+                                <p>3289.50 USDT</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="custom-card">
+                                <h3> Leverage</h3>
+                                <p>3289.50 USDT</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="custom-card">
+                                <h3>Income</h3>
+                                <p>3289.50 USDT</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="custom-card">
+                                <h3>Income</h3>
+                                <p>3289.50 USDT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
